@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BlockChain</title>
+        <h1 style="position: absolute; left:600px; top:0px; color: rgb(88, 97, 97);">Understanding Blockchain Technology !</h1>
+        <h4 style="position: absolute; left:1000px; top:40px;color:rgb(71, 78, 78);"> - Monick S (URK23CS1167) </h4>
+    </head>
+    <body style="background-color: rgb(172, 172, 172);">
+        
+    </div>
+    <div style="position: absolute; left:300px; top:100px; font-size: large; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
+        <img src="bc1.jpg" alt="BlockChain" width="1200" height="300" >
+        <p style="color: rgb(71, 71, 146);"><b>Blockchain is a decentralized digital ledger that securely stores  records across a network of computers in a way that is transparent, immutable, and resistant to tampering. <br>Each "block" contains data, and blocks are linked in a chronological "chain."</b></p>
+    </div>
+    <div style="position: absolute; left:50px; bottom:200px; font-size: large;">
+        <h2>What is it ?</h2>
+        <p>
+        A blockchain is a distributed database or ledger shared across a computer network's nodes.<br> They are best known for their crucial role in cryptocurrency systems, maintaining a secure <br> and decentralized record of transactions, but they are not limited to cryptocurrency uses.<br>  Blockchains can be used to make data in any industry immutable—meaning it  cannot<br>  be altered.
+
+Since a block can’t be changed, the only trust needed is at the point where a <br> user or program enters data.  This reduces the need for trusted third parties, such as auditors<br> or other humans, who add costs and can make mistakes.
+
+Since Bitcoin's introduction in 2009,<br>  blockchain uses have exploded via the creation of <a href="https://www.investopedia.com/tech/most-important-cryptocurrencies-other-than-bitcoin/"> various cryptocurrencies</a>, <a href="https://www.investopedia.com/decentralized-finance-defi-5113835">decentralized</a><br>  finance (DeFi) applications, <a href="https://www.investopedia.com/non-fungible-tokens-nft-5115211">non-fungible tokens (NFTs)</a>, and smart contracts.
+</p>
+    </div>
+    <div style="position: absolute; left:750px; bottom:150px;">
+        <img src="bc2.webp" alt="BlockChain" width="400" height="300" >
+    </div>
+    <div style="position: absolute; left:1190px; bottom:150px; font-size: large;">
+        <h2>How Does a Blockchain Works ?</h2>
+        <p>
+            You might be familiar with spreadsheets or databases. A blockchain is somewhat  similar because it is a database  where information is entered and stored. The key difference between a traditional database or spreadsheet and  a blockchain is how the data is structured and accessed.
+            A blockchain consists of programs called scripts that conduct the tasks you usually would in a database: entering and accessing information, and <a href="https://www.investopedia.com/10-biggest-blockchain-companies-5213784">saving  and storing it somewhere</a>. A blockchain is distributed, which means multiple copies are saved on  many machines, and they must all match for it to be valid.
+
+The Bitcoin blockchain collects transaction information and enters it into a 4MB file called a<a href="https://www.investopedia.com/terms/b/block-bitcoin-block.asp">block</a> (different blockchains have different size blocks).  Once the block is full, the block data is run through a cryptographic hash function, which creates a hexadecimal number called the <a href="https://www.investopedia.com/terms/b/block-header-cryptocurrency.asp">block header</a> hash.
+
+The hash is then entered into the following block header and encrypted with the other information in that block's header, creating a chain of blocks, hence the name “blockchain.”
+
+        </p>
+    </div>
+
+    <div style="position: relative; left:50px; bottom:-800px; font-size: large;"">
+        <h2>
+            Transaction Process
+
+        </h2>
+        <p>
+            Transactions follow a specific process, depending on the blockchain. For example, on <br> Bitcoin's blockchain, if you initiate a transaction using your <a href="https://www.investopedia.com/terms/b/bitcoin-wallet.asp">cryptocurrency wallet</a>—the<br>  application that provides an interface for the blockchain—it starts a sequence of events.<br> 
+
+In Bitcoin, your transaction is sent to a memory pool, where it is stored and queued until<br>  a miner picks it up. Once it is entered into a block and the block fills up with transactions,<br>  it is closed, and the mining begins.
+Every node in the network proposes its own blocks in<br> this way because they all choose different transactions. Each works on their own blocks,<br> trying to find a solution to the difficulty target, using the "nonce," short for number used<br> once.
+
+The nonce value is a field in the block header that is changeable, and its value<br> incrementally increases with every mining attempt. If the resulting hash isn't equal 
+to or<br> less than the target hash, a value of one is added to the nonce, a new hash is generated,<br> and so on. The nonce rolls over about every 4.5 billion attempts 
+(which takes less than<br> one second) and uses another value called the extra nonce as an additional counter.
+<br>This continues until a miner generates a valid hash, winning the race and receiving the reward.
+        </p>
+    </div>
+
+    <div style="position: relative; left:750px; bottom:-470px;">
+        <img src="transaction.webp" alt="BlockChain" width="400" height="300" >
+    </div>
+
+    <div style="position: relative; left:1200px; bottom:-140px; width: 400px; height: 250px;
+    border: 5px solid rgb(107, 105, 105);
+    padding: 50px;
+    margin: 20px;
+  ">
+  <div style="position: relative; left:0px; bottom:60px;">
+        <h2>
+            Fast Fact
+
+        </h2>
+        <p>
+            Generating these hashes until a specific value is found is the "proof-of-work" you hear so much about—it "proves" the miner did the work.
+             The sheer amount of work it takes to validate the hash is why the Bitcoin network consumes so much computational power and energy.
+             Once a block is closed, a transaction is complete. However, the block is not considered confirmed until five other blocks have been validated. 
+             Confirmation takes the network about one hour to complete because it averages just under 10 minutes per block (the first block with your transaction 
+             and five following blocks multiplied by 10 equals 60 minutes).
+
+Not all blockchains follow this process. For instance, the Ethereum network randomly chooses one validator from all users with ether staked to validate blocks, 
+which are then confirmed by the network. This is much faster and less energy intensive than Bitcoin's process.
+        </p>
+    </div>
+    </div>
+    </body>
+</html>
