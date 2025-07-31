@@ -1,87 +1,217 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>BlockChain</title>
-        <h1 style="position: absolute; left:600px; top:0px; color: rgb(88, 97, 97);">Understanding Blockchain Technology !</h1>
-        <h4 style="position: absolute; left:1000px; top:40px;color:rgb(71, 78, 78);"> - Monick S (URK23CS1167) </h4>
-    </head>
-    <body style="background-color: rgb(172, 172, 172);">
+<!-- This is an HTML comment: A simple webpage about Blockchain Technology --> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Blockchain Technology Explained</title> 
+    <style>
+        body {
+            background-color: #f0f8ff; /* AliceBlue */ 
+            color: #333333; /* Dark Grey */ 
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #000080; /* Navy */ 
+            text-align: center;
+        }
+        h2 {
+            color: #4682b4; /* SteelBlue */ 
+        }
+        h3 {
+            color: #5f9ea0; /* CadetBlue */ 
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        a {
+            color: #0000ff; /* Blue */ 
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .section-box {
+            background-color: #e0ffff; /* LightCyan */ 
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main heading for the page --> 
+    <h1>Understanding Blockchain Technology</h1> 
+
+    <div class="section-box">
+        <h2>What is Blockchain?</h2>
+        <p>Blockchain is a decentralized and distributed ledger technology that records transactions across many computers, {Link: according to AlmaBetter https://www.almabetter.com/bytes/tutorials/html/hyperlinks-and-anchor-tag-in-html}}. Each block in the chain contains a cryptographic hash of the previous block, a timestamp, and transaction data, {Link: according to AlmaBetter https://www.almabetter.com/bytes/tutorials/html/hyperlinks-and-anchor-tag-in-html}}. This structure makes the blockchain resistant to modification of the data. Once recorded, the data in any given block cannot be altered retroactively without altering all subsequent blocks, which would require the collusion of the network majority, {Link: according to AlmaBetter https://www.almabetter.com/bytes/tutorials/html/hyperlinks-and-anchor-tag-in-html}}. This inherent security is one of its most attractive features, ensuring data integrity and trust without the need for a central authority.</p>
+        <p>The concept of blockchain was first introduced by a person or group using the pseudonym Satoshi Nakamoto in 2008 to create Bitcoin, a cryptocurrency. However, the technology's applications extend far beyond cryptocurrencies, impacting various industries from finance and supply chain to healthcare and voting systems.</p>
         
-    </div>
-    <div style="position: absolute; left:300px; top:100px; font-size: large; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">
-        <img src="bc1.jpg" alt="BlockChain" width="1200" height="300" >
-        <p style="color: rgb(71, 71, 146);"><b>Blockchain is a decentralized digital ledger that securely stores  records across a network of computers in a way that is transparent, immutable, and resistant to tampering. <br>Each "block" contains data, and blocks are linked in a chronological "chain."</b></p>
-    </div>
-    <div style="position: absolute; left:50px; bottom:200px; font-size: large;">
-        <h2>What is it ?</h2>
-        <p>
-        A blockchain is a distributed database or ledger shared across a computer network's nodes.<br> They are best known for their crucial role in cryptocurrency systems, maintaining a secure <br> and decentralized record of transactions, but they are not limited to cryptocurrency uses.<br>  Blockchains can be used to make data in any industry immutable—meaning it  cannot<br>  be altered.
+        <!-- External Link with Target --> 
+        <p>For a deeper dive into the origins of Bitcoin and blockchain, you can visit the {Link: Bitcoin Whitepaper https://bitcoin.org/bitcoin.pdf} (opens in a new tab).</p>
 
-Since a block can’t be changed, the only trust needed is at the point where a <br> user or program enters data.  This reduces the need for trusted third parties, such as auditors<br> or other humans, who add costs and can make mistakes.
-
-Since Bitcoin's introduction in 2009,<br>  blockchain uses have exploded via the creation of <a href="https://www.investopedia.com/tech/most-important-cryptocurrencies-other-than-bitcoin/"> various cryptocurrencies</a>, <a href="https://www.investopedia.com/decentralized-finance-defi-5113835">decentralized</a><br>  finance (DeFi) applications, <a href="https://www.investopedia.com/non-fungible-tokens-nft-5115211">non-fungible tokens (NFTs)</a>, and smart contracts.
-</p>
-    </div>
-    <div style="position: absolute; left:750px; bottom:150px;">
-        <img src="bc2.webp" alt="BlockChain" width="400" height="300" >
-    </div>
-    <div style="position: absolute; left:1190px; bottom:150px; font-size: large;">
-        <h2>How Does a Blockchain Works ?</h2>
-        <p>
-            You might be familiar with spreadsheets or databases. A blockchain is somewhat  similar because it is a database  where information is entered and stored. The key difference between a traditional database or spreadsheet and  a blockchain is how the data is structured and accessed.
-            A blockchain consists of programs called scripts that conduct the tasks you usually would in a database: entering and accessing information, and <a href="https://www.investopedia.com/10-biggest-blockchain-companies-5213784">saving  and storing it somewhere</a>. A blockchain is distributed, which means multiple copies are saved on  many machines, and they must all match for it to be valid.
-
-The Bitcoin blockchain collects transaction information and enters it into a 4MB file called a<a href="https://www.investopedia.com/terms/b/block-bitcoin-block.asp">block</a> (different blockchains have different size blocks).  Once the block is full, the block data is run through a cryptographic hash function, which creates a hexadecimal number called the <a href="https://www.investopedia.com/terms/b/block-header-cryptocurrency.asp">block header</a> hash.
-
-The hash is then entered into the following block header and encrypted with the other information in that block's header, creating a chain of blocks, hence the name “blockchain.”
-
-        </p>
+        <!-- Clickable Image as an External Link --> 
+        <div class="image-container">
+            <a href="https://www.ibm.com/topics/what-is-blockchain" target="_blank">
+                <img src="bc1.jpg" alt="Illustrative image of blockchain technology" width="300" height="150"> 
+            </a>
+            <p><small>Click the image to learn more about blockchain from IBM.</small></p>
+        </div>
     </div>
 
-    <div style="position: relative; left:50px; bottom:-800px; font-size: large;"">
-        <h2>
-            Transaction Process
-
-        </h2>
-        <p>
-            Transactions follow a specific process, depending on the blockchain. For example, on <br> Bitcoin's blockchain, if you initiate a transaction using your <a href="https://www.investopedia.com/terms/b/bitcoin-wallet.asp">cryptocurrency wallet</a>—the<br>  application that provides an interface for the blockchain—it starts a sequence of events.<br> 
-
-In Bitcoin, your transaction is sent to a memory pool, where it is stored and queued until<br>  a miner picks it up. Once it is entered into a block and the block fills up with transactions,<br>  it is closed, and the mining begins.
-Every node in the network proposes its own blocks in<br> this way because they all choose different transactions. Each works on their own blocks,<br> trying to find a solution to the difficulty target, using the "nonce," short for number used<br> once.
-
-The nonce value is a field in the block header that is changeable, and its value<br> incrementally increases with every mining attempt. If the resulting hash isn't equal 
-to or<br> less than the target hash, a value of one is added to the nonce, a new hash is generated,<br> and so on. The nonce rolls over about every 4.5 billion attempts 
-(which takes less than<br> one second) and uses another value called the extra nonce as an additional counter.
-<br>This continues until a miner generates a valid hash, winning the race and receiving the reward.
-        </p>
+    <div class="section-box">
+        <h2>Key Components of Blockchain</h2>
+        <p>Understanding blockchain technology requires familiarity with its fundamental building blocks:</p>
+        <ul>
+            <li><b>Distributed Ledger:</b> A shared, immutable record of transactions.</li>
+            <li><b>Cryptography:</b> Secures transactions and links blocks.</li>
+            <li><b>Consensus Mechanisms:</b> Rules that determine how transactions are validated.</li>
+            <li><b>Smart Contracts:</b> Self-executing contracts with the terms of the agreement directly written into code.</li>
+        </ul>
+        <h3>Types of Blockchain Networks</h3>
+        <p>Blockchains can be categorized into different types based on their accessibility and governance:</p>
+        <ol>
+            <li>Public Blockchains:
+                <ul>
+                    <li>Open to anyone for participation.</li>
+                    <li>Examples: Bitcoin, Ethereum.</li>
+                </ul>
+            </li>
+            <li>Private Blockchains:
+                <ul>
+                    <li>Controlled by a single organization.</li>
+                    <li>Membership is restricted.</li>
+                    <li>Examples: Hyperledger Fabric.</li>
+                </ul>
+            </li>
+            <li>Consortium Blockchains:
+                <ul>
+                    <li>Governed by a group of organizations.</li>
+                    <li>Offers a balance between centralization and decentralization.</li>
+                </ul>
+            </li>
+        </ol>
     </div>
 
-    <div style="position: relative; left:750px; bottom:-470px;">
-        <img src="transaction.webp" alt="BlockChain" width="400" height="300" >
+    <div class="section-box">
+        <h2>Applications and Use Cases</h2>
+        <p>Blockchain technology is revolutionizing various industries due to its ability to provide transparency, security, and efficiency. Some notable applications include:</p>
+        
+        <!-- Internal Link --> 
+        <p>Explore the diverse applications of blockchain technology in our <a href="#industry-impact">Industry Impact</a> section below.</p>
+        
+        <!-- Definition List --> 
+        <dl>
+            <dt>Cryptocurrencies</dt>
+            <dd>Digital or virtual currencies that use cryptography for security.</dd>
+            <dt>Supply Chain Management</dt>
+            <dd>Tracking goods and ensuring transparency throughout the supply chain.</dd>
+            <dt>Healthcare</dt>
+            <dd>Securely managing patient records and medical data.</dd>
+            <dt>Voting Systems</dt>
+            <dd>Creating tamper-proof and transparent voting processes.</dd>
+        </dl>
     </div>
 
-    <div style="position: relative; left:1200px; bottom:-140px; width: 400px; height: 250px;
-    border: 5px solid rgb(107, 105, 105);
-    padding: 50px;
-    margin: 20px;
-  ">
-  <div style="position: relative; left:0px; bottom:60px;">
-        <h2>
-            Fast Fact
-
-        </h2>
-        <p>
-            Generating these hashes until a specific value is found is the "proof-of-work" you hear so much about—it "proves" the miner did the work.
-             The sheer amount of work it takes to validate the hash is why the Bitcoin network consumes so much computational power and energy.
-             Once a block is closed, a transaction is complete. However, the block is not considered confirmed until five other blocks have been validated. 
-             Confirmation takes the network about one hour to complete because it averages just under 10 minutes per block (the first block with your transaction 
-             and five following blocks multiplied by 10 equals 60 minutes).
-
-Not all blockchains follow this process. For instance, the Ethereum network randomly chooses one validator from all users with ether staked to validate blocks, 
-which are then confirmed by the network. This is much faster and less energy intensive than Bitcoin's process.
-        </p>
+    <div class="section-box" id="industry-impact">
+        <h2>Blockchain's Industry Impact</h2>
+        <p>Blockchain is transforming numerous sectors by introducing new levels of trust and efficiency. This technology enables secure and transparent record-keeping, reducing the need for intermediaries and enhancing data integrity. From revolutionizing financial services with faster and cheaper cross-border payments to ensuring the authenticity of goods in supply chains, blockchain is proving to be a versatile and powerful tool. Its decentralized nature fosters greater collaboration and shared data without compromising privacy or security.</p>
+        
+        <h3>Key Industry Transformations</h3>
+        <p>The impact of blockchain is being felt across a broad spectrum of industries:</p>
+        <ul>
+            <li>Financial Services:
+                <ol>
+                    <li>Faster settlements</li>
+                    <li>Reduced fraud</li>
+                    <li>New financial products</li>
+                </ol>
+            </li>
+            <li>Supply Chain:
+                <ol>
+                    <li>Improved traceability</li>
+                    <li>Enhanced transparency</li>
+                    <li>Reduced counterfeiting</li>
+                </ol>
+            </li>
+            <li>Healthcare:
+                <ol>
+                    <li>Secure patient data management</li>
+                    <li>Facilitated data sharing for research</li>
+                    <li>Improved drug traceability</li>
+                </ol>
+            </li>
+        </ul>
     </div>
+
+    <div class="section-box">
+        <h2>Blockchain Transaction Data</h2>
+        <p>Transactions on a blockchain are recorded and validated by network participants. Here's a simplified view of how transaction data might be structured:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Transaction ID</th>
+                    <th>Sender</th>
+                    <th>Recipient</th>
+                    <th>Amount (Units)</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TX12345</td>
+                    <td>Alice</td>
+                    <td>Bob</td>
+                    <td>10.5</td>
+                    <td>2025-07-31 10:00:00</td>
+                </tr>
+                <tr>
+                    <td>TX67890</td>
+                    <td>Bob</td>
+                    <td>Charlie</td>
+                    <td>5.0</td>
+                    <td>2025-07-31 11:15:30</td>
+                </tr>
+                <tr>
+                    <td>TX11223</td>
+                    <td>Charlie</td>
+                    <td>Alice</td>
+                    <td>2.25</td>
+                    <td>2025-07-31 12:40:10</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    </body>
+
+    <div class="section-box">
+        <h2>Contact and Further Information</h2>
+        <p>If you have any questions about blockchain technology, feel free to:</p>
+        <ul>
+            <li><a href="mailto:info@example.com?subject=Inquiry about Blockchain">Send us an email</a></li> 
+            <li>Call us at <a href="tel:+1234567890">123-456-7890</a></li> 
+        </ul>
+        <p>You can also refer to the {Link: HTML.com HTML for beginners tutorial https://html.com/} for more information on creating webpages like this one.</p>
+    </div>
+
+    <!-- Bookmark Link to the top of the page -->
+    <p><a href="#">Back to Top</a></p> 
+
+</body>
 </html>
